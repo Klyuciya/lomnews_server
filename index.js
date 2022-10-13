@@ -44,8 +44,8 @@ app.get("/", (req, res) => {
 
 async function start() {
   try {
-    // await mongoose.connect(process.env.MONGODB_URI);
-    await mongoose.connect("mongodb+srv://Myrzagul:MA1234@cluster0.5rhohrz.mongodb.net/lomnews?retryWrites=true&w=majority");
+    await mongoose.connect(process.env.MONGODB_URI);
+    // await mongoose.connect("mongodb+srv://Myrzagul:MA1234@cluster0.5rhohrz.mongodb.net/lomnews?retryWrites=true&w=majority");
 
 
     app.listen(process.env.PORT || port, () => {
